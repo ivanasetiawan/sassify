@@ -20,3 +20,59 @@
   max-width: 100%
   width: 100%
   height: auto
+
+// Variable
+$fontFamily: 'Enriqueta', Georgia, serif
+$titleFont: 'Sansita One', cursive, Georgia, serif
+$fontColor: #111
+$altColor: #0070b8
+$alertColor: #c30c30
+
+::-moz-selection
+  background: $alertColor
+  color: #fff
+  text-shadow: none
+
+::selection
+  background: $alertColor
+  color: #fff
+  text-shadow: none
+
+body
+  font-family: $fontFamily
+  /* The font-size is now 0.625 * 16px = 10px. */
+  font-size: 0.625em
+  /* The leading is now 25 pixels. */
+  line-height: 2.5em
+  color: $fontColor
+
+.wrap
+  max-width: 1000px
+  margin: 0 auto
+
+header
+  text-align: center
+
+  h1
+    margin: 30px 0 20px
+    font-size: 9em
+    font-weight: bold
+    font-family: $titleFont
+    line-height: 1em
+    color: $altColor
+
+  h2
+    font-size: 2.5em
+    font-family: $titleFont
+    color: #707070
+
+h2
+  margin-bottom: 15px
+  font-size: 3em
+  font-weight: bold
+
+.content
+  p
+    margin-bottom: 15px
+    font-size: 1.7em
+    line-height: 1.7em
